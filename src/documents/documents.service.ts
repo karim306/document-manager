@@ -12,7 +12,7 @@ export class DocumentsService {
     const allowedTypes = ['pdf', 'docx', 'xlsx'];
     const fileType = path.extname(file.originalname).substring(1);
 
-    if (!allowedTypes.includes(fileType) || file.size > 5 * 1024 * 1024) {
+    if (!allowedTypes.includes(fileType) || file.size > 10 * 1024 * 1024) {
       throw new Error('Invalid file type or size');
     }
 
