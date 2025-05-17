@@ -32,10 +32,25 @@ A comprehensive document management system built with NestJS that provides docum
 - Document-level access control
 - User-based permissions
 
-## API Documentation
+## API Documentation & Access
 
+### API Documentation
 Complete API documentation with examples is available in Postman:
 [Postman Documentation](https://documenter.getpostman.com/view/34079090/2sB2cd5dvd)
+
+### Access Requirements
+- All API endpoints require authentication
+- JWT token must be included in request headers
+- Default admin credentials are provided upon system setup
+- Contact system administrator for API access credentials
+
+### Authentication Flow
+1. Create user account or receive credentials
+2. Login to receive JWT token
+3. Include token in Authorization header:
+   ```
+   Authorization: Bearer <your_jwt_token>
+   ```
 
 ## Technical Stack
 
