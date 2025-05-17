@@ -1,0 +1,16 @@
+[
+  {
+    "id": "18088a9d-6ea1-4bd9-8595-d31edbca7078",
+    "username": "admin",
+    "email": "admin@example.com",
+    "role": "admin",
+    "createdAt": "2025-05-17T10:42:08.945Z"
+  },
+  {
+    "id": "8ff7d202-1aea-4633-9f56-7c7c3c59e210",
+    "username": "testuser",
+    "email": "test@example.com",
+    "role": "user",
+    "createdAt": "2025-05-17T10:44:47.650Z"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "8a41aaae-9cc2-404d-8f38-c878e04de6ab",
+    "documentId": "f11e2b9d-b88c-485a-8cd2-35635fdc2746",
+    "userId": "8ff7d202-1aea-4633-9f56-7c7c3c59e210",
+    "level": "edit",
+    "grantedAt": "2025-05-17T10:46:39.612Z"
+  },
+  {
+    "id": "0b8fd880-f263-4af5-87ad-e59ef0378288",
+    "documentId": "440d2f94-7bf1-4157-8838-e06d99c6e48c",
+    "userId": "18088a9d-6ea1-4bd9-8595-d31edbca7078",
+    "level": "admin",
+    "grantedAt": "2025-05-17T10:49:13.829Z",
+    "grantedBy": "system"
+  }
+]
