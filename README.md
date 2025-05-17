@@ -1,98 +1,136 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
-</p>
+# Document Management System
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+A comprehensive document management system built with NestJS that provides document upload, folder management, tagging, and role-based access control.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## Features
 
-## Description
+### 1. File Upload SDK
+- Upload documents (PDF, Word, Excel)
+- Add metadata (title, description, tags)
+- Automatic file type validation
+- Secure storage with unique identifiers
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+### 2. Folder Management
+- Create, edit, and delete folders
+- Hierarchical folder structure
+- Parent-child folder relationships
+- Folder-based document organization
 
-## Project setup
+### 3. Tagging System
+- Add and remove tags from documents
+- Search documents by tags
+- Tag-based organization
+- Multiple tags per document
 
-```bash
-$ npm install
+### 4. Role-Based Access Control (RBAC)
+- User management with roles (Admin, User)
+- Permission levels:
+  - View
+  - Edit
+  - Download
+  - Admin
+- Document-level access control
+- User-based permissions
+
+## API Documentation
+
+Complete API documentation with examples is available in Postman:
+[Postman Documentation](https://documenter.getpostman.com/view/34079090/2sB2cd5dvd)
+
+## Technical Stack
+
+- Backend: NestJS
+- Database: File-based JSON storage
+- File Storage: Local filesystem
+- Authentication: Role-based with JWT
+- Validation: Built-in NestJS pipes and custom validators
+
+## Project Structure
+
+```
+src/
+├── auth/           # Authentication and RBAC
+├── documents/      # Document management
+├── folders/        # Folder management
+├── tags/          # Tagging system
+├── config/        # Configuration
+└── utils/         # Utilities
 ```
 
-## Compile and run the project
+## Getting Started
 
+1. Clone the repository:
 ```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
+git clone https://github.com/karim306/document-manager.git
 ```
 
-## Run tests
-
+2. Install dependencies:
 ```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
+cd document-manager
+npm install
 ```
 
-## Deployment
-
-When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
-
-If you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:
-
+3. Start the server:
 ```bash
-$ npm install -g @nestjs/mau
-$ mau deploy
+npm run start:dev
 ```
 
-With Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.
+## Core Functionalities
 
-## Resources
+### Document Management
+- Upload documents with metadata
+- Organize documents in folders
+- Add tags for easy search
+- Version control and tracking
 
-Check out a few resources that may come in handy when working with NestJS:
+### Access Control
+- Create and manage users
+- Assign roles and permissions
+- Control document access
+- Track user activities
 
-- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
-- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
-- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
-- Deploy your application to AWS with the help of [NestJS Mau](https://mau.nestjs.com) in just a few clicks.
-- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
-- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
-- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
-- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
+### Search and Organization
+- Search by tags
+- Filter by folders
+- Advanced metadata search
+- Hierarchical organization
 
-## Support
+## API Endpoints
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+### Documents
+- POST /documents/upload - Upload new document
+- GET /documents - List all documents
+- GET /documents/:id - Get document details
+- DELETE /documents/:id - Delete document
 
-## Stay in touch
+### Folders
+- POST /folders - Create new folder
+- GET /folders - Get folder structure
+- PUT /folders/:id - Update folder
+- DELETE /folders/:id - Delete folder
 
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+### Tags
+- POST /tags - Add tags to document
+- GET /tags/document/:id - Get document tags
+- PUT /tags/document/:id - Update document tags
+- GET /tags/search/documents - Search documents by tags
 
-## License
+### Users & Permissions
+- POST /users - Create new user
+- GET /permissions/document/:id - Get document permissions
+- POST /permissions/grant - Grant permissions
+- PUT /permissions/update - Update permissions
 
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+## Security Features
+
+- File type validation
+- Role-based access control
+- User authentication
+- Permission validation
+
+## Data Storage
+
+- Documents stored in /uploads directory
+- Metadata stored in JSON files
+- User data in secure JSON storage
+- Permissions in separate JSON store
