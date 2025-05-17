@@ -1,0 +1,59 @@
+[
+  {
+    "id": "440d2f94-7bf1-4157-8838-e06d99c6e48c",
+    "title": "\"Test PDF Document\"",
+    "description": "This is a test PDF upload",
+    "tags": [
+      "[\"test\", \"pdf\", \"document\"]"
+    ],
+    "fileType": "pdf",
+    "fileSize": 13264,
+    "filePath": "uploads\\1747473937582-340709548-dummy.pdf",
+    "createdAt": "2025-05-17T09:25:37.585Z",
+    "updatedAt": "2025-05-17T09:25:37.585Z",
+    "mimeType": "application/pdf"
+  },
+  {
+    "id": "d818bb27-c444-40e5-ab63-f5707cea2ffd",
+    "title": "Test PDF Document for folder ",
+    "description": "This is a test PDF in a folder",
+    "tags": [
+      "[\"pdf\", \"test\", \"folder\"]"
+    ],
+    "fileType": "pdf",
+    "fileSize": 13264,
+    "filePath": "uploads\\1747474395023-484650805-dummy.pdf",
+    "folderId": "44325cdf-0638-4375-a1e2-1d638067824c",
+    "createdAt": "2025-05-17T09:33:15.033Z",
+    "updatedAt": "2025-05-17T09:33:15.033Z",
+    "mimeType": "application/pdf"
+  },
+  {
+    "id": "f11e2b9d-b88c-485a-8cd2-35635fdc2746",
+    "title": "Test PDF Document for folder ",
+    "description": "This is a test PDF in a folder",
+    "tags": [
+      "[\"pdf\", \"test\", \"folder\"]"
+    ],
+    "fileType": "pdf",
+    "fileSize": 13264,
+    "filePath": "uploads\\1747474401565-158950966-dummy.pdf",
+    "folderId": "248fa349-18cb-4ba5-81b9-83c9a000b16e",
+    "createdAt": "2025-05-17T09:33:21.595Z",
+    "updatedAt": "2025-05-17T09:33:21.595Z",
+    "mimeType": "application/pdf"
+  },
+  {
+    "id": "6dc5fcf0-2226-4c98-b86e-f6f49805cfda",
+    "title": "Test PDF",
+    "description": "A test PDF document",
+    "tags": [],
+    "fileType": "pdf",
+    "fileSize": 22,
+    "filePath": "uploads\\1747475288859-342929006-test.pdf",
+    "folderId": "57da29fd-2ea3-4b58-9c52-4a673ab22da0",
+    "createdAt": "2025-05-17T09:48:08.870Z",
+    "updatedAt": "2025-05-17T09:48:08.870Z",
+    "mimeType": "application/pdf"
+  }
+]
